@@ -5,115 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elevora AI - Build Your Career with AI</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#111827;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#38bdf8;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-
-.hero{
-text-align:center;
-padding:90px 20px;
-}
-
-.hero h1{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
-font-size:20px;
-color:#cbd5e1;
-line-height:1.6;
-}
-
-.buttons{
-margin-top:35px;
-}
-
-.btn{
-padding:15px 30px;
-margin:10px;
-border:none;
-border-radius:12px;
-cursor:pointer;
-font-size:18px;
-font-weight:bold;
-}
-
-.primary{
-background:#2563eb;
-color:white;
-}
-
-.secondary{
-background:white;
-color:#111827;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:60px 8%;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:18px;
-}
-
-.card h2{
-margin-bottom:15px;
-color:#38bdf8;
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#111827;
-margin-top:40px;
-color:#94a3b8;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -123,9 +15,8 @@ color:#94a3b8;
 
 <ul>
 <li><a href="#">Home</a></li>
-<li><a href="#">Features</a></li>
-<li><a href="#">Pricing</a></li>
-<li><a href="#">Login</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#login">Login</a></li>
 </ul>
 </nav>
 
@@ -135,40 +26,64 @@ color:#94a3b8;
 
 <p>
 Create professional resumes, generate AI-powered cover letters,
-optimize your ATS score, and land your dream job faster with Elevora AI.
+improve your ATS score, and land your dream job faster.
 </p>
 
 <div class="buttons">
-<button class="btn primary">Get Started</button>
-<button class="btn secondary">View Templates</button>
+<button class="primary" onclick="showLogin()">Get Started</button>
+<button class="secondary">View Features</button>
 </div>
 
 </section>
 
-<section class="features">
+<section id="features" class="features">
 
 <div class="card">
-<h2>AI Resume Builder</h2>
-<p>Create beautiful professional resumes in minutes.</p>
+<h2>📄 Resume Builder</h2>
+<p>Create beautiful resumes in minutes.</p>
 </div>
 
 <div class="card">
-<h2>ATS Checker</h2>
-<p>Improve your resume score and pass applicant tracking systems.</p>
+<h2>🎯 ATS Checker</h2>
+<p>Check whether your resume passes ATS systems.</p>
 </div>
 
 <div class="card">
-<h2>AI Cover Letter</h2>
-<p>Generate personalized cover letters with one click.</p>
+<h2>✉️ Cover Letter Generator</h2>
+<p>Create personalized cover letters instantly.</p>
 </div>
+
+<div class="card">
+<h2>🤖 AI Career Coach</h2>
+<p>Receive AI suggestions to improve your career.</p>
+</div>
+
+</section>
+
+<section id="login" class="login-box">
+
+<h2>Login to Elevora AI</h2>
+
+<input type="email" placeholder="Email">
+
+<input type="password" placeholder="Password">
+
+<button class="primary">Login</button>
+
+<p>
+Don't have an account?
+<a href="#">Create Account</a>
+</p>
 
 </section>
 
 <footer>
 
-© 2026 Elevora AI • Build Your Career with AI
+<p>© 2026 Elevora AI • Powered by AI</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
